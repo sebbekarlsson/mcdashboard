@@ -1,0 +1,32 @@
+.table {
+  width: 100%;
+  text-align: left; }
+  .table th, .table td {
+    box-sizing: border-box;
+    padding: 1rem; }
+
+.server-table tbody tr {
+  height: 64px; }
+  .server-table tbody tr td:nth-of-type(1) {
+    width: 10%; }
+.server-table img {
+  width: 32px;
+  height: 32px; }
+
+.view-dashboard {
+  font-family: 'Roboto', sans-serif; }
+  .view-dashboard .dashboard-content {
+    width: 80%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-sizing: border-box;
+    padding: 1rem; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/*# sourceMappingURL=style.css.map */

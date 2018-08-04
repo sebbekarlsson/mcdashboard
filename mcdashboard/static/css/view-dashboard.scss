@@ -1,0 +1,16 @@
+@import 'mixins.scss';
+
+
+.view-dashboard {
+    @include font-default;
+
+    .dashboard-content {
+        width: 80%;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        @include shadow-1;
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+}

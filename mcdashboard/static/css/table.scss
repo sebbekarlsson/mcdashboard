@@ -1,0 +1,9 @@
+.table {
+    width: 100%;
+    text-align: left;
+
+    th, td {
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+}
