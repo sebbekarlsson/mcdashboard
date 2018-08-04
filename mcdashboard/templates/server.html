@@ -10,7 +10,7 @@
         
         <form class='form' method='POST'>
             {{ render_field(form.name) }}
-            {{ render_field(form.port, disabled=true) }}
+            {{ render_field(form.port, disabled=true) if server }}
 
             <div class='push-down'>
                 <input type='submit' class='btn btn-primary' value='Save'/>
