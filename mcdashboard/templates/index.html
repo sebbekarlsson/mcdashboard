@@ -13,13 +13,13 @@
             </tr>
         </thead>
         <tdashboard>
-            {% for i in range(0, 6) %}
+            {% for server in servers %}
                 <tr>
                     <td><img src='{{ url_for('static', filename='image/minecraft.png') }}'/></td>
-                    <td>aposdjfpoawjefpa;localhost</td>
-                    <td>localhost:25565</td>
-                    <td>UP</td>
-                    <td><a href='/server/aposdjfpaosdfj'>Manage</a></td>
+                    <td>{{ server.id }}</td>
+                    <td>localhost:{{ server.port }}</td>
+                    <td>{{ server.get_container().status }}</td>
+                    <td><a href='/server/{{ server.id }}'>Manage</a></td>
                 </tr>
             {% endfor %}
         </tdashboard>

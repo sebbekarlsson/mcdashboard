@@ -10,7 +10,9 @@ setup(
         'jsmin',
         'flask',
         'docker',
-        'wtforms'
+        'wtforms',
+        'pymongo',
+        'mongoengine'
     ],
     packages=find_packages(),
     entry_points={
