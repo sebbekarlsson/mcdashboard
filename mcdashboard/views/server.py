@@ -37,7 +37,8 @@ def show(server_id):
                 query=dict(id=ObjectId(server_id)), single=True)\
                 if server_id else None
 
-    elif server:
+    if server:
         form.name.data = server.name
+        form.port.data = server.port
 
     return render_template('server.html', form=form, server=server)

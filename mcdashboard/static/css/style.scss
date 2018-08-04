@@ -1,6 +1,18 @@
+@import 'navbar.scss';
 @import 'table.scss';
 @import 'server-table.scss';
+@import 'inputs.scss';
 @import 'view-dashboard.scss';
+@import 'view-server.scss';
 
 
 * { margin: 0; padding: 0; }
+
+.push-down {
+    margin-top: 1rem;
+}
+
+.site-content {
+    width: 80%;
+    margin: auto;
+}

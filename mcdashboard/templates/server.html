@@ -5,15 +5,21 @@
 
 {% block dashboard %}
     <div class='view-server'>
+        <meta name='server_id' content='{{ server.id if server else '' }}'/>
         <h1>{% if server %}{{ server.name }}{% else %}Create a new server{% endif %}</h1>
         
         <form class='form' method='POST'>
             {{ render_field(form.name) }}
+            {{ render_field(form.port, disabled=true) }}
 
             <div class='push-down'>
                 <input type='submit' class='btn btn-primary' value='Save'/>
                 {% include 'components/errors.html' %}
             </div>
         </form>
+        {% if server %}
+            <h2 class='push-down'>Logs <i>(reload page to update)</i></h2>
+            <pre id='logs'></pre>
+        {% endif %}
     </div>
 {% endblock %}

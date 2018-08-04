@@ -1,0 +1,27 @@
+@import 'mixins.scss';
+
+
+.input-text {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    outline: none;
+    color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    font-size: 100%;
+    @include font-default;
+}
+
+.form {
+    dt {
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    dd {
+        margin-top: 0.5rem;
+    }
+}

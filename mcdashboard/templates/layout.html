@@ -21,7 +21,20 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
     </head>
     <body>
-        {% block body %}
-        {% endblock %}
+        <nav class='navbar'>
+            <div class='site-content'>
+                <div class='section'>
+                    <a class='nav-item' href='/'>MCDashboard</a>
+                </div>
+                <div class='section'>
+                    <a class='nav-item' href='/'>Servers</a>
+                    <a class='nav-item' href='/server'>New</a>
+                </div>
+            </div>
+        </nav>
+        <div class='site-content'>
+            {% block body %}
+            {% endblock %}
+        </div>
     </body>
 </html>

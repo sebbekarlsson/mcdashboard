@@ -19,7 +19,9 @@ def run():
     env.register(
         'js_all',
         flask_assets.Bundle(
+            'wget.js',
             'utils.js',
+            'view-server.js',
             'app.js',
             filters=['jsmin'],
             output='js/packed.js'

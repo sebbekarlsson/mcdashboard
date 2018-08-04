@@ -12,7 +12,7 @@
                 <th></th>
             </tr>
         </thead>
-        <tdashboard>
+        <tbody>
             {% for server in servers %}
                 <tr>
                     <td><img src='{{ url_for('static', filename='image/minecraft.png') }}'/></td>
@@ -22,6 +22,6 @@
                     <td><a href='/server/{{ server.id }}'>Manage</a></td>
                 </tr>
             {% endfor %}
-        </tdashboard>
+        </tbody>
     </table>
 {% endblock %}
