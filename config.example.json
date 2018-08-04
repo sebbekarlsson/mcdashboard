@@ -1,0 +1,8 @@
+{
+    "debug": true,
+    "threaded": true,
+    "mongo": {
+        "host": "localhost",
+        "db": "mcdashboard"
+    }
+}
