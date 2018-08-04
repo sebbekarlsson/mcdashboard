@@ -9,7 +9,8 @@ setup(
         'flask_assets',
         'jsmin',
         'flask',
-        'docker'
+        'docker',
+        'wtforms'
     ],
     packages=find_packages(),
     entry_points={

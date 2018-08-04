@@ -1,29 +1,27 @@
-{% extends 'layout.html' %}
+{% extends 'layout_dashboard.html' %}
 
 
-{% block body %}
-    <div class='view-dashboard'>
-        <div class='dashboard-content'>
-            <table class='table server-table'>
-                <thead>
-                    <tr>
-                        <th>Server</th>
-                        <th>ID</th>
-                        <th>IP</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for i in range(0, 6) %}
-                        <tr>
-                            <td><img src='{{ url_for('static', filename='image/minecraft.png') }}'/></td>
-                            <td>aposdjfpoawjefpa;localhost</td>
-                            <td>localhost:25565</td>
-                            <td><a href='/server/aposdjfpaosdfj'>Manage</a></td>
-                        </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
-    </div>
+{% block dashboard %}
+    <table class='table server-table'>
+        <thead>
+            <tr>
+                <th>Server</th>
+                <th>ID</th>
+                <th>IP</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tdashboard>
+            {% for i in range(0, 6) %}
+                <tr>
+                    <td><img src='{{ url_for('static', filename='image/minecraft.png') }}'/></td>
+                    <td>aposdjfpoawjefpa;localhost</td>
+                    <td>localhost:25565</td>
+                    <td>UP</td>
+                    <td><a href='/server/aposdjfpaosdfj'>Manage</a></td>
+                </tr>
+            {% endfor %}
+        </tdashboard>
+    </table>
 {% endblock %}
