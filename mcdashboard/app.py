@@ -1,4 +1,5 @@
 from flask import Flask
+from mcdashboard.views.api import bp as api_bp
 from mcdashboard.views.index import bp as index_bp
 from mcdashboard.views.server import bp as server_bp
 
@@ -10,5 +11,6 @@ app.config.update(
     TEMPLATES_AUTO_RELOAD=True
 )
 
+app.register_blueprint(api_bp)
 app.register_blueprint(index_bp)
 app.register_blueprint(server_bp)
